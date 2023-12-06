@@ -1,0 +1,6 @@
+---
+- name: Testing of IIS service
+  hosts: all
+  tasks: 
+   - name: windows command to stop the IIS service 
+     ansible.windows.win_command:  iisreset /stop
