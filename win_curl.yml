@@ -1,6 +1,6 @@
 ---
 - name: Run a command on Windows
-  hosts: windows_servers
+  hosts: localhost
   gather_facts: false
   tasks:
     - name: Execute a command using win_command
