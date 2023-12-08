@@ -1,0 +1,13 @@
+---
+- name: Run a command on Windows
+  hosts: localhost
+  tasks:
+    - name: Execute a command using win_command
+      command: 'curl https://docs.ansible.com/'
+      register: command_result
+
+    - name: Display the command result
+      debug:
+        var: command_result.stdout_lines
+
+
